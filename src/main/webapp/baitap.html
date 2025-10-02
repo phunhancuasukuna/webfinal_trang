@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bài tập Lập trình Web - Trần Thành Danh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#0f1724;
+      --muted:#9aa4b2;
+      --accent:#6ee7b7;
+    }
+    body {
+      margin: 0;
+      font-family: Inter, sans-serif;
+      background: linear-gradient(180deg, var(--bg), #071022);
+      color: #e6eef6;
+      padding: 32px;
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.02);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.7);
+      backdrop-filter: blur(6px);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .chapter {
+      margin-bottom: 24px;
+    }
+    .chapter h2 {
+      font-size: 1.2rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+      margin-bottom: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: rgba(255,255,255,0.03);
+      border-radius: 10px;
+      padding: 14px;
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 4px 16px rgba(2,6,23,0.45);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(2,6,23,0.6); }
+    .card h3 { margin: 0 0 6px; font-size: 1rem; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+    .link-list { margin-top: 10px; }
+    .link-list a {
+      display: block;
+      padding: 8px 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--accent);
+      background: rgba(110,231,183,0.04);
+      border: 1px solid rgba(110,231,183,0.06);
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: background .12s ease, transform .12s ease;
+    }
+    .link-list a:hover { background: rgba(110,231,183,0.08); transform: translateY(-2px); }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      background: rgba(110,231,183,0.08);
+      border: 1px solid rgba(110,231,183,0.2);
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .back-btn:hover { background: rgba(110,231,183,0.15); transform: translateY(-2px); }
+
+    footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bài tập Lập trình Web</h1>
+
+    <div class="chapter">
+      <h2>Làm website cá nhân bằng odoo</h2>
+      <div class="grid">
+        <div class="card"><h3>Bài tập 1</h3><p>Sử dụng nền tảng odoo, để làm website mà không cần code</p><div class="link-list"><a href="https://23133010.odoo.com/" target="_blank">Xem bài tập</a></div></div>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <h2>Introduction to Web Development</h2>
+      <div class="grid">
+        <div class="card"><h3>Bài tập 2</h3><p>Thực hành tạo một web project</p><div class="link-list"><a href="https://baitap2-10ez.onrender.com/" target="_blank">Xem bài tập</a></div></div>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <h2>Làm quen với HTML5 và CSS3</h2>
+      <div class="grid">
+        <div class="card"><h3>Bài tập 3</h3><p>Hiểu và sử dụng các thẻ HTML5 để hoàn thành các yêu cầu</p><div class="link-list"><a href="https://two3133010-buoi03.onrender.com" target="_blank">Xem bài tập</a></div></div>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <h2>Làm quen với Servlet</h2>
+      <div class="grid">
+        <div class="card"><h3>Bài tập 4</h3><p>Hiểu về cách hoạt động của servlet trong một ứng dụng web</p><div class="link-list"><a href="https://two3133010-servletassigment.onrender.com/" target="_blank">Xem bài tập</a></div></div>
+      </div>
+    </div>
+
+	<div class="chapter">
+      <h2>Làm quen với JSP</h2>
+      <div class="grid">
+        <div class="card"><h3>Bài tập 6.1</h3><p>Thực hiện bài tập điền form join email</p><div class="link-list"><a href="https://danhtran-chapter06-01-week03.onrender.com/" target="_blank">Xem bài tập</a></div></div>
+        <div class="card"><h3>Bài tập 6.2</h3><p>Thực hiện lại bài tập điền form survey</p><div class="link-list"><a href="https://danhtran-chapter06-02-week03.onrender.com/" target="_blank">Xem bài tập</a></div></div>
+      </div>
+    </div>
+    
+    <div class="chapter">
+      <h2>Làm các bài tập về JSTL, EL (Chương 8, 9)</h2>
+      <div class="grid">
+        <div class="card"><h3>Bài tập 8</h3><p>EL</p><div class="link-list"><a href="https://chapter08-8673.onrender.com/" target="_blank">Xem bài tập</a></div></div>
+        <div class="card"><h3>Bài tập 9.1</h3><p>JSTL</p><div class="link-list"><a href="https://danhtran-23133010-chapter09-1.onrender.com/" target="_blank">Xem bài tập</a></div></div>
+        <div class="card"><h3>Bài tập 9.2</h3><p>JSTL</p><div class="link-list"><a href="https://danhtran-23133010-chapter09-2.onrender.com/" target="_blank">Xem bài tập</a></div></div>
+      </div>
+    </div>
+    
+    <div class="chapter">
+      <h2>Bài tập về session và cookies</h2>
+      <div class="grid">
+        <div class="card"><h3>Bài tập 7</h3><p>Làm lại bài tập về giỏ hàng</p><div class="link-list"><a href="https://danhtran-23133010-ch07cart.onrender.com/" target="_blank">Xem bài tập</a></div></div>
+      </div>
+    </div>
+    
+    <div class="chapter">
+      <h2>Bài tập về session và cookies (tt)</h2>
+      <div class="grid">
+        <div class="card"><h3>Bài tập </h3><p>Làm lại bài tập về music store</p><div class="link-list"><a href="https://danhtran-downloadmusic-week05.onrender.com" target="_blank">Xem bài tập</a></div></div>
+      </div>
+    </div>
+    
+    <div class="chapter">
+      <h2>Bài tập kết nối CSDL cho web bằng JDBC</h2>
+      <div class="grid">
+        <div class="card"><h3>Bài tập</h3><p>Hiểu về cách dùng JDBC để kết nối đến CSDL cho web</p><div class="link-list"><a href="https://two3133010-chapter12-week06.onrender.com" target="_blank">Xem bài tập</a></div></div>
+      </div>
+    </div>
+    
+    <div class="chapter">
+      <h2>Bài tập sử dụng JPA để tương tác với CSDL</h2>
+      <div class="grid">
+        <div class="card"><h3>Bài tập</h3><p>Hiểu về cách dùng JPA để tương tác với CSDL cho web</p><div class="link-list"><a href="https://two3133010-chapter13-week06.onrender.com" target="_blank">Xem bài tập</a></div></div>
+      </div>
+    </div>
+    <a href="index.html" class="back-btn">← Quay lại trang giới thiệu</a>
+
+    <footer>
+      <p>© 2025 Trần Thành Danh — Trang bài tập môn Lập trình Web.</p>
+    </footer>
+  </div>
+</body>
+</html>

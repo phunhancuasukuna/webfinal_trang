@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giới thiệu - Trần Thành Danh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#6ee7b7;
+      --glass: rgba(255,255,255,0.04);
+    }
+    body {
+      margin: 0;
+      font-family: Inter, sans-serif;
+      background: linear-gradient(180deg, var(--bg), #071022);
+      color: #e6eef6;
+      padding: 32px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.02);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.7);
+      backdrop-filter: blur(6px);
+    }
+    header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 14px;
+      overflow: hidden;
+      flex: 0 0 120px;
+      border: 2px solid rgba(255,255,255,0.06);
+      background: var(--glass);
+    }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .intro h1 { margin: 0; font-size: 1.6rem; }
+    .intro p { margin: 6px 0; color: var(--muted); line-height: 1.5; }
+
+    .meta { margin-top: 10px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .pill {
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .section {
+      margin-top: 28px;
+    }
+    .section h2 {
+      font-size: 1.15rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+      margin-bottom: 12px;
+    }
+    .info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      line-height: 1.8;
+    }
+    .info-list li span {
+      color: var(--muted);
+      margin-right: 8px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill {
+      padding: 6px 12px;
+      border-radius: 8px;
+      background: rgba(110,231,183,0.05);
+      border: 1px solid rgba(110,231,183,0.15);
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      background: rgba(110,231,183,0.08);
+      border: 1px solid rgba(110,231,183,0.2);
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .btn:hover { background: rgba(110,231,183,0.15); transform: translateY(-2px); }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      header { flex-direction: column; text-align: center; }
+      .avatar { width: 100px; height: 100px; }
+      .meta { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">
+        <img src="./images/c870cdff-ff7c-4500-b0dd-9af04d13f233.jpg" alt="Ảnh đại diện">
+      </div>
+      <div class="intro">
+        <h1>Xin chào — Tôi là Trần Thành Danh 👋</h1>
+        <p>Sinh viên ngành Công nghệ Thông tin, yêu thích lập trình web, khám phá dữ liệu và các công nghệ mới.</p>
+        <p>Ngày sinh: 20/08/2005</p>
+        <p>MSSV: 23133010</p>
+        <p>Trường Đại học Sư phạm Kĩ thuật TP. Hồ Chí Minh</p>
+        <div class="meta">
+          <span class="pill">Sinh viên CNTT</span>
+          <span class="pill">Lập trình Web</span>
+          <span class="pill">TP. HCM</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Thông tin liên hệ</h2>
+      <ul class="info-list">
+        <li><span>📧 Email:</span> <a href="mailto:tranthanhdanhktvn2005d@gmail.com" style="color:var(--accent);text-decoration:none;">tranthanhdanhktvn2005d@gmail.com</a></li>
+        <li><span>📱 SĐT:</span> 090x xxx xxx</li>
+        <li><span>📘 Facebook:</span> <a href="https://facebook.com/" target="_blank" style="color:var(--accent);text-decoration:none;">facebook.com/danhtran</a></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Kỹ năng & Sở thích</h2>
+      <div class="skills">
+        <span class="skill">HTML / CSS / JavaScript</span>
+        <span class="skill">Java Web (Servlet / JSP)</span>
+        <span class="skill">SQL / MySQL</span>
+        <span class="skill">Git & GitHub</span>
+        <span class="skill">Phân tích dữ liệu</span>
+        <span class="skill">Thích học công nghệ mới 🔍</span>
+        <span class="skill">Nghe nhạc 🎵</span>
+        <span class="skill">Tập luyện Calisthenics 💪</span>
+      </div>
+    </section>
+
+    <a href="baitap.html" class="btn">Xem danh sách bài tập →</a>
+
+    <footer>
+      <p>© 2025 Trần Thành Danh — Trang giới thiệu cá nhân.</p>
+    </footer>
+  </div>
+</body>
+</html>
